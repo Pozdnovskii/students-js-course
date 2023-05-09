@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Students</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <script defer src="js/script-start.js"></script> -->
+  <script defer src="js/script.js"></script>
+</head>
+
+<body class="container">
+  <form class="form flex" novalidate action="">
+    <div class="form__row flex">
+      <div class="form__field flex">
+        <input class="form__input" type="text" id="name-input">
+        <label id="name-label" for="name-input">Name</label>
+      </div>
+
+      <div class="form__field flex">
+        <input class="form__input" type="text" id="surname-input">
+        <label id="surname-label" for="surname-input">Surname</label>
+      </div>
+
+      <div class="form__field flex">
+        <input class="form__input" type="text" id="middlename-input">
+        <label id="middlename-label" for="middlename-input">Middle name</label>
+      </div>
+    </div>
+
+    <div class="form__row flex">
+      <div class="form__field flex">
+        <input class="form__input" type="date" id="birthdate-input" min="1900-01-01">
+        <label id="birthdate-label" for="birthdate-input">Birthdate</label>
+      </div>
+
+      <div class="form__field flex">
+        <input class="form__input" type="number" id="startdate-input" placeholder="2000" min="2000">
+        <label id="startdate-label" for="startdate-input">Start year</label>
+      </div>
+
+      <div class="form__field flex">
+        <input class="form__input" type="text" id="faculty-input">
+        <label id="faculty-label" for="faculty-input">Faculty</label>
+      </div>
+    </div>
+
+    <button class="form__button" id="add-button">Add New Student</button>
+  </form>
+
+  <div class="filter-button">
+    <h2 class="filter__header">Search&nbsp;by</h2>
+    <form class="flex filter-form" id="filter-form">
+      <div class="filter__field">
+        <label class="filter__label" for="name-filter">Name</label>
+        <input class="filter__input filter__input_text" type="text" id="name-filter">
+      </div>
+
+      <div class="filter__field">
+        <label class="filter__label" for="faculty-filter">Faculty</label>
+        <input class="filter__input filter__input_text" type="text" id="faculty-filter">
+      </div>
+
+      <div class="filter__field">
+        <label class="filter__label" for="startdate-filter">Start&nbsp;year</label>
+        <input class="filter__input filter__input_number" type="number" id="startyear-filter" placeholder="2000"
+          min="2000">
+      </div>
+
+      <div class="filter__field">
+        <label class="filter__label" for="finishdate-filter">Finish&nbsp;year</label>
+        <input class="filter__input filter__input_number" type="number" id="finishyear-filter" placeholder="2004"
+          min="2004">
+      </div>
+
+      <button class="filter-form__button" id="filter-button">Clear&nbsp;filters</button>
+    </form>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th id="theader-name">Student</th>
+        <th id="theader-faculty">Faculty</th>
+        <th id="theader-age">Birthdate and Age</th>
+        <th id="theader-start">Years of study</th>
+      </tr>
+    </thead>
+
+    <tbody></tbody>
+  </table>
+</body>
+
+</html>
